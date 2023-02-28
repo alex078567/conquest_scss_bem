@@ -1,0 +1,64 @@
+/*************/
+/* utilities */
+/*************/
+
+.whitespace-nowrap {
+	white-space: nowrap;
+}
+
+.container {
+	max-width: 136.6rem;
+	padding: 0 10rem;
+	margin: 0 auto;
+
+	&--hero {
+		max-width: 136.6rem;
+		padding: 0 11.4rem;
+		margin: 0 auto;
+	}
+
+	&--footer {
+		padding: 6.7rem 18.2rem;
+	}
+}
+
+.grid {
+	display: grid;
+
+	&--hero {
+		grid-template-columns: auto 1fr;
+		gap: 9.5rem;
+		align-items: center;
+	}
+
+	&--models {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 3.4rem;
+		justify-content: center;
+		align-items: end;
+	}
+
+	&--details {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 3rem;
+	}
+	&--features {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 6.9rem;
+		align-items: center;
+	}
+	&--news {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 7.1rem;
+		justify-items: start;
+		align-items: center;
+	}
+	&--news-images {
+		grid-template-columns: auto 1fr;
+		gap: 1rem;
+	}
+	&--footer {
+		grid-template-columns: repeat(4, 1fr);
+		gap: 8rem;
+	}
+}
